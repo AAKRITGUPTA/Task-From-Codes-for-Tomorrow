@@ -29,7 +29,7 @@ const FormComponent = () => {
     <div className="flex w-screen h-screen gap-2 bg-gray-200 relative">
       <Leftsidebar />
       <div className="flex-1 flex flex-col items-center rounded-2xl justify-center bg-gray-200 relative">
-        {/* Cross Button */}
+        
         <button
           className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 shadow hover:bg-gray-100"
           onClick={() => navigate("/")}
@@ -109,7 +109,7 @@ const FormComponent = () => {
           </button>
         </form>
 
-        {/* Show submitted data in a table */}
+       
         {submitted && (
           <div className="mt-8 w-full max-w-lg">
             <h2 className="text-xl font-semibold mb-2 text-gray-700">Submitted Data</h2>
