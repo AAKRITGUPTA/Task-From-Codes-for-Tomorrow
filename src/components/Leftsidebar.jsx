@@ -12,7 +12,7 @@ const Leftsidebar = () => {
 
   return (
     <aside className="w-[20vw] min-w-[220px] flex flex-col p-4 h-[100vh] bg-gray-300 shadow-lg">
-      {/* Profile */}
+      
       <div className="w-full mt-8 flex rounded-2xl h-[90px] bg-white items-center shadow">
         <div className="w-[30%] flex items-center justify-center h-full">
           <div className="w-[60px] h-[60px] bg-red-100 rounded-full flex items-center justify-center overflow-hidden border-2 border-gray-200 hover:scale-105 transition-transform">
@@ -30,7 +30,6 @@ const Leftsidebar = () => {
         </div>
       </div>
 
-      {/* View Toggle (hide on /feedbackform) */}
       {location.pathname !== "/feedbackform" && (
         <section className="w-full mt-10 flex flex-col items-center justify-center rounded-2xl h-[90px] bg-white shadow">
           <h1 className="text-2xl text-center mb-2 font-semibold text-gray-700">View Toggle</h1>
@@ -65,7 +64,6 @@ const Leftsidebar = () => {
         </section>
       )}
 
-      {/* Feedback */}
       <section className="w-full mt-auto flex flex-col rounded-2xl h-[110px] p-4 bg-white shadow">
         <h1 className="text-xl text-center font-semibold text-gray-700">Have a Feedback?</h1>
         <button
