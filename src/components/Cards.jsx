@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 const Cards = ({ post, onRemove }) => {
   return (
     <div className="w-full max-w-3xl flex flex-col sm:flex-row items-stretch bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200 mb-4">
-      {/* Avatar */}
+
       <div className="flex items-center justify-center p-4">
         <div className="w-14 h-14 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
           <img
