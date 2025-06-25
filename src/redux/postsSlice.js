@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-// Async thunk to fetch posts
 export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   if (!res.ok) throw new Error("Network response was not ok");
@@ -11,7 +10,7 @@ const postsSlice = createSlice({
   name: "posts",
   initialState: {
     data: [],
-    status: "idle", // idle | loading | succeeded | failed
+    status: "idle", 
     error: null,
   },
   reducers: {
