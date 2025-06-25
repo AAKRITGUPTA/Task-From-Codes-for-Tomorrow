@@ -22,8 +22,7 @@ const FormComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(form);
-    // Optionally reset form:
-    // setForm({ firstName: "", lastName: "", address: "", country: "", email: "", phone: "" });
+    setForm({ firstName: "", lastName: "", address: "", country: "", email: "", phone: "" });
   };
 
   return (
